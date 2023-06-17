@@ -20,7 +20,8 @@ The Car Telematics App allows users to manage and analyze car telematics data se
 
 Using the Car Telematics App is straightforward. Upon accessing the application, users can navigate to the dashboard section to explore the telematics data. The dashboard showcases detailed information, including speed, RPM, fuel level, and temperature, allowing users to gain insights into vehicle performance.
 
-![Dashboard](dashboard-image-url)
+![image](https://github.com/blacksheepaway/Car-Telematics/assets/50200471/a3969daa-7ec0-43df-a673-affbaca077ef)
+
 
 ## Modification for Other Applications
 
