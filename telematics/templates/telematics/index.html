@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Telematics Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'telematics/styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Car</span> Telematics Dashboard</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="dashboard">Dashboard</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+    <select id="vin-select">
+        {% for vin in car_vins %}
+            <option value="{{ vin }}">{{ vin }}</option>
+        {% endfor %}
+    </select>
+    <select id="variable-select">
+        <option value="speed">Speed</option>
+        <option value="rpm">RPM</option>
+        <option value="fuel_level">Fuel Level</option>
+        <option value="temperature">Temperature</option>
+    </select>
+        <table id="car-table">
+        <tr>
+            <th>VIN</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Timestamp</th>
+            <th>Speed</th>
+            <th>RPM</th>
+            <th>Fuel Level</th>
+            <th>Temperature</th>
+        </tr>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="{% static 'telematics/dashboard.js' %}"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+     </table>
+
+        <div id="graph"></div>
+    </div>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="{% static 'telematics/dashboard.js' %}"></script>
+</body>
+</html>
