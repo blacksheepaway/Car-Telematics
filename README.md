@@ -14,7 +14,7 @@ The Car Telematics App allows users to manage and analyze car telematics data se
 - **JavaScript**: Utilized to enhance user interactions and update the dashboard dynamically.
 - **HTML**: Responsible for creating the structure and content of web pages.
 - **CSS**: Used to style and layout the web application, providing an aesthetic user interface.
-- **Charting Libraries**: Employed to generate interactive and visually appealing charts and graphs.
+- **Pltly Charting Library**: Employed to generate interactive and visually appealing charts and graphs.
 
 ## Example
 
